@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* mobile */
+
+@media screen and (max-width: 900px) {
+    
+
+
+    body{
+        overflow-x: hidden;
+    }
+    .itemDetailsContainer{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-rows: 1fr 1fr auto;
+        grid-template-columns: 1fr;
+
+    }
+
+    .itemDescription{
+        border: 1px solid gray;
+        border-radius: 5px;
+        display: grid;
+        padding: 20px;
+    }
+
+    .actualDescriptionHeaders{
+        display: grid;
+        grid-template-rows: 1fr 1fr 3fr;
+    }
+
+    .itemDescriptionCloseContainer{
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .itemImage{
+        
+        object-fit: cover;
+    }
+
+    .addToCartBtn{
+        background-color: #0093FF;
+        color: white;
+        text-align: center;
+        display: grid;
+        align-items: center;
+        border-radius: 5px;
+        
+    }
+
+    .moreItems{
+        display: grid;
+        /* width: 500% ; */
+        /* overflow:'hidden' */
+        grid-template-rows: 50px 300px;
+    }
+
+    .moreItemsContent{
+        width: 400%;
+        display: grid;
+       
+        grid-template-columns:  repeat(11, 250px);
+        grid-template-rows: 250px;
+        overflow-x: auto;
+        /* overflow-y: hidden; */
+        grid-column-gap: 50px;
+        
+        
+    }
+
+    /* .moreItems div{
+        display: grid;
+        grid-template-rows: 1fr 50px;
+    } */
+
+    .moreItemsImages{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+
+    }
+
+
+}
+
+@media screen and (min-width: 900px) {
+    body{
+        background-color: rgb(227, 227, 227);
+    }
+    .itemDetailsContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+        grid-column-gap: 10px;
+        /* background-color: white; */
+    }
+
+    .itemDescription{
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid rgb(222, 222, 222);
+        background: white;
+    }
+
+    .itemDescriptionCloseContainer{
+        display: grid;
+        grid-template-rows: 1fr 50px;
+        grid-gap: 20px;
+        height: 100%;
+    }
+
+    .actualDescriptionHeaders{
+        display: grid;
+        grid-template-rows: 50px 50px 1fr;
+    }
+
+    .addToCartBtn{
+        background-color: #0093FF;
+        padding: 10px;
+        display: grid;
+        place-content: center;
+        border-radius: 7px;
+        color: white;
+    }
+
+    .addToCartBtn:hover{
+        background-color: #005ea1;
+        color: white;
+    }
+
+    .itemImage{
+        
+        object-fit: cover;
+        border-radius: 3px;
+    }
+
+}

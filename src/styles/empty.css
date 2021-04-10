@@ -1,0 +1,14 @@
+.empty-container {
+    display: flex;
+    height: 300px;
+    width:initial;
+    color: #dee1ec;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+h1 {
+    font-size: larger;
+    font-weight: bold;
+}

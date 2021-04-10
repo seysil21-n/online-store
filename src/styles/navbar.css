@@ -1,0 +1,118 @@
+.nav-bar {
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f1f2f6;
+    overflow: scroll;
+}
+
+.nav-bar a {
+    display: inline;
+}
+
+.nav-bar .icon {
+    display: none;
+}
+
+.nav-bar a {
+    padding: 0 16px;
+}
+
+a:hover {
+    color: #5e5e5e;
+    cursor: pointer;
+}
+
+.nav-bar .input {
+    transition: all 0.15s ease-in-out; /* Animation */
+    outline: none !important;
+    background-color: #f1f2f6;
+    margin: 0 3px;
+    width: 200px;
+}
+
+.nav-bar .input:focus {
+    box-shadow: 0px 0px 10px #7bed9f;
+}
+
+.nav-bar .btn {
+    padding: 10px;
+    border: 1px solid #dfe4ea;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    background-color: #dfe4ea;
+}
+
+.menu {
+    display: none;
+}
+
+.account:hover{
+    color: rgb(106, 106, 106);
+}
+
+/* if screen is lesser than */
+@media screen and (max-width: 900px) {
+    .mL{
+        padding: 10px 0;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        padding: 12px 16px;
+        background-color: transparent;
+    }
+
+    .menu-span {
+        display: none;
+    }
+
+    .nav-bar .icon {
+        display: flex;
+        flex: inherit;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-bar .input {
+        width: inherit;
+      }
+    
+    .nav-bar .btn {
+        width:inherit;
+    }
+
+    .itemsInCartCount{
+        padding: 5px;
+        border: 1px solid green;
+        border-radius: 5px;
+
+    }
+
+    
+}
+
+@media screen and (min-width: 900px) {
+    .menu{
+        display: none;
+    }
+}
+
+.font{
+    text-decoration: none;
+    color: black;
+}

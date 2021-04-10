@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+hr {
+  color: rgba(226, 247, 240, 0.2);
+  margin: 10px 0;
+}
+
+br {
+  margin: 0;
+}
+
+.font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 20px 20px;
+  overflow: scroll;
+}
+
+/* if screen is greater than */
+@media screen and (min-width: 900px) {
+  hr {
+    color: rgba(226, 247, 240, 0.2);
+    /* margin: 45px 0; */
+  }
+
+  br {
+    margin: 15px 0;
+  }
+}
